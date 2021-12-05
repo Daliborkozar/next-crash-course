@@ -40,9 +40,11 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false,
+    fallback: false, // fallback vraca 404 ako je nevazeci route
   }
 }
+
+
 
 // export const getStaticProps = async (context) => {
 //   const res = await fetch(
